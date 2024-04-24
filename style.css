@@ -1,0 +1,263 @@
+
+
+body{
+    margin: 0;
+    font-family: 'inter',sans-serif ;
+    padding: 2px;
+}
+
+h1{
+    font-size: 6vw;
+    color: rgba(4, 24, 90, 0.918); 
+ }
+ p{
+     font-size: 3vw;
+ }
+span{
+    padding-top: 0%;
+    font-size: 4vw;
+}
+.product-images{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding: 10px;
+    
+}
+.product-images > img {
+    height:550px;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+.more-images{
+    display: flex;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+p{
+    color: rgb(19, 1, 22);
+    padding-bottom: 0%;
+    margin-bottom: 1px;
+}
+.prices-details div{
+    display: flex;
+    align-items: center;
+    text-decoration: #172180;
+    
+}
+.prices-details >p{
+    text-decoration: line-through;
+    color: rgb(33, 3, 80);
+    margin-top: 5px;
+}
+.product-description{
+    color: rgb(152, 151, 151);
+    font-weight: 300;
+
+}
+.discount{
+    color: red;
+    margin-left: 8px;
+}
+
+.more-images img{
+    cursor: pointer;
+    height: 10vh;
+    border-radius: 4px;
+    margin-left: 2vw;
+    
+}
+
+.list-color{
+    height: 60px;
+    width: 40px;
+    list-style: none;
+    margin-right: 8px;
+}
+.list-color {
+    display: inline-block;
+    width: 40px; 
+    height: 55px; 
+    margin: 5px; 
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .list-color.selected {
+    border: 2px solid transparent; 
+  }
+  
+  .list-color.selected::after {
+    content: '\2713'; 
+    color: #fff; 
+    font-size: 14px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .list-color.selected:hover {
+    border: 2px solid #fff; 
+  }
+  
+.size-buttons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.colors-option{
+    display: flex;
+    
+}
+.list-sizes {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+.list-sizes input[type="radio"] {
+    display: inline;
+    
+}
+
+.list-sizes  {
+    display: inline-block;
+    padding: 8px;
+    background-color: #e0e0e0; 
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 25px;
+
+}
+
+
+.list-sizes input[type="radio"]:checked + label {
+    color: #3498db;
+   
+}
+
+.cart-buttons {
+    display: flex;
+    align-items: right;
+}
+.cart-btn{
+    position: relative;
+    margin-left: 8px;
+}
+
+.cart-btn button{
+    background-color: #172180;
+    color:  rgb(235, 234, 234);
+    height: 48px;
+    border-radius: 16px;
+    width: auto;
+    padding: 8px 16px;
+    border: 0;
+
+}
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    vertical-align: center;
+    width: 72px;
+    height: 32px;
+    background-color: rgb(235, 234, 234);
+    border: 0;
+    color: #172180;
+    border-radius: 16px;
+    padding: 8px 16px;
+    
+}
+#decrement, #increment{
+    cursor: pointer;
+}
+.quantity-selector button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+@media (min-width:768px) {
+    .container{
+        display: flex;
+    }
+    .product-images,.cart-details{
+        flex: 1; 
+    }
+    .product-images > img{
+        height: 80vh;
+    }
+    .cart-details{
+        width: 100%;
+        height: 100vh;
+        max-width: 100vw;
+    }   
+    h1{
+        font-size: 3vw; 
+        margin-bottom: 8px;
+       
+     }
+     p{
+         font-size: 1.5vw;
+         margin-bottom: 8px;
+     }
+     span{
+         font-size:1vw;
+         
+     }
+     .list-color{
+        margin-right: 15px;
+        height: 40px;
+        width: 40px;
+     }
+     .more-images img{   
+        display: flex;
+        justify-content: center;
+        margin-right: 25px;
+        height: 100px;
+        
+     }
+     .quantity-selector {
+        width: 8vw;
+        padding: 18px;
+        height: 8vh;
+        
+        border-radius: 30px;
+        
+        
+     }
+    #addToCart{
+        width: 17vw;
+        height: 8vh;
+        margin-bottom: 25px;
+        border-radius: 30px;
+        
+        
+    }
+   
+}
+
+@media screen and (min-width:1000) {
+    .thumbnail-img img {
+        width: 65%;
+        height: 70%;
+        max-width: 65%;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-right: 20px;
+        
+    }
+}

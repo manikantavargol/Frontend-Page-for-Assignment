@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Marmeto Frontend(Manikant A)</title>
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Inter">
+    <link href="https://fonts.google.com/specimen/Inter" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ab14b15c2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-images">
+        
+          <img id="mainImage" src="assests/shop (1).jpg" alt="image"/>
+        
+        <div class="more-images">
+          <img src="assests/shop (3).jpg" alt="more-images" onclick="changeThumbnail(this)"/>
+          <img src="assests/shop (2).jpg" alt="more-images" onclick="changeThumbnail(this)"/>
+          <img src="assests/shop (1).jpg" alt="more-images" onclick="changeThumbnail(this)"/>
+          <img src="assests/shop (4).jpg" alt="more-images" onclick="changeThumbnail(this)"/>
+        </div>
+      </div>
+      <div class="cart-details">
+        <div class="title">
+        </div>
+        <hr class="hr"/>
+        <div class='prices-details'>
+        </div>
+        <hr class="hr"/>
+        <div class="options-color" >
+          <p>Choose a color</p>
+          <div class="colors-option">             
+          </div>
+        </div>
+        <hr class="hr"/>
+        <div class="options-sizes">
+          <p>Choose a Size</p>
+          <ul class="sizes-option size-buttons">
+          </ul>
+        </div>
+        
+        <div class="cart-buttons">
+          <button class="quantity-selector"><p id="decrement">-</p><p class='quantity'>0</p> <p id="increment">+</p></button>
+          <div class="cart-btn">
+            <button id="addToCart"> <i class="fa-solid fa-cart-shopping"></i>   Add To Cart</button>
+            
+          </div>
+        </div>
+
+        <hr>
+        <div class="product-description"></div>
+      </div>
+    </div>
+    
+    <script src="script.js">
+    
+      
+    </script>
+  </body>
+</html>
